@@ -3,5 +3,6 @@ WORKDIR /./
 COPY package*.json ./
 RUN npm install
 RUN npm run build
-COPY ./build ./ 
+CMD [ "mkdir", "build" ]
+COPY ./build ./build 
 CMD [ "mv", "./build/*", "/var/www/kemuro/" ]
