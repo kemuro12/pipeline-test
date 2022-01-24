@@ -3,4 +3,5 @@ WORKDIR /./
 COPY package*.json ./
 RUN npm install
 COPY . .
+CMD [ "mv", "/public/*", "/var/www/kemuro/" ]
 CMD [ "node", "index.js" ]
