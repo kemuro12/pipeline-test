@@ -1,0 +1,8 @@
+version: "3"
+services:
+ server:
+  build: ./
+  container_name: server
+  ports:
+   - "127.0.0.1:3001:3001"
+  restart: unless-stopped
