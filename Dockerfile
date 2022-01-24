@@ -4,3 +4,4 @@ COPY package*.json ./
 RUN npm install
 RUN npm run build
 ADD public ./ 
+CMD [ "node", "index.js" ]
