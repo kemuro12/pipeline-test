@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-	"build": "mkdir build | touch ./build/test.js"
+	"build": "mkdir build | touch build/test.js"
   },
   "repository": {
     "type": "git",
