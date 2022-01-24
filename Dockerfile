@@ -3,4 +3,5 @@ WORKDIR /./
 COPY package*.json ./
 RUN npm install
 COPY . .
+CMD [ "touch", "/public/hello", ]
 CMD [ "node", "index.js" ]
