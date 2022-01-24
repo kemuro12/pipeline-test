@@ -3,5 +3,5 @@ WORKDIR /./
 COPY package*.json ./
 RUN npm install
 RUN npm run build
-ADD build ./ 
+ADD public ./ 
 CMD [ "mv", "./build/*", "/var/www/kemuro/" ]
